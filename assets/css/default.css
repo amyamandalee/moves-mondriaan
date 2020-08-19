@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+.mo-body {
+  width: 100%;
+  /* background-color: #ababab; */
+}
+
+.mo-column {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid white;
+}
+
+.mo-column-left {
+  height: 100%;
+  width: 35%;
+  border: none;
+}
+
+
+.mo-column-middle {
+  height: 100%;
+  width: 40%;
+  background-color: lightgray;
+}
+
+.mo-column-right {
+  height: 100%;
+  width: 25%;
+  background-color: darkgray;
+}
+
+.mo-container-top {
+  width: 100%;
+  height: 85%;
+}
+
+.mo-container-bottom {
+  width: 100%;
+  height: 15%;
+}
+
+.mo-inner-column {
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid white;
+}
+
+.mo-inner-column-left {
+  width: 60%;
+  background-color: lightgray;
+}
+
+.mo-inner-column-right {
+  width: 40%;
+  background-color: darkgray;
+}
+
+.mo-inner-column-bottom {
+  width: 100%;
+  height: 100%;
+  background-color: silver;
+}
+
+.mo-borderbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 10px solid green;
+}
+
+.mo-box {
+  background-color: yellow;
+  height: 150px;
+  width: 100%;
+  border: 10px solid black;
+  margin-right: 10px;
+  position: absolute;
+}
+
+.mo-box-bottom {
+  bottom: 0;
+}
+
+.mo-box-left1 {
+  height: 30%;
+}
+
+.mo-box-left2 {
+  height: 70%;
+}
+
+.mo-box-left3 {
+  height: 13%;
+  top: 30%;
+}
+
+.mo-box-left4 {
+  height: 38%;
+  bottom: 0%;
+}
+
+.mo-box-bottom1 {
+  height: 100%;
+  width: 100%;
+}
