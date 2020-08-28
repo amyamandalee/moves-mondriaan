@@ -3,7 +3,7 @@
 }
 
 .mo-body {
-  width: 100%;
+  width: calc(100% - 15px);
   /* background-color: #ababab; */
 }
 
@@ -71,11 +71,11 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 10px solid green;
+  border: 10px solid blue;
 }
 
 .mo-box {
-  background-color: yellow;
+  background-color: orange;
   height: 150px;
   width: 100%;
   border: 10px solid black;
@@ -88,7 +88,8 @@
 }
 
 .mo-box-left1 {
-  height: 30%;
+  height: calc(30% + 10px);
+  background-color: #0f0f0f;
 }
 
 .mo-box-left2 {
@@ -96,16 +97,268 @@
 }
 
 .mo-box-left3 {
+  height: calc(30% + 10px);
+  top: 0%;
+}
+
+.mo-box-left4 {
   height: 13%;
   top: 30%;
 }
 
-.mo-box-left4 {
+.mo-box-left5 {
+  height: 22%;
+  bottom: calc(38% - 10px);
+}
+
+.mo-box-left6 {
   height: 38%;
   bottom: 0%;
+}
+
+.mo-box-left7 {
+  height: 38%;
+  bottom: 0%;
+  background-color: #0f0f0f;
 }
 
 .mo-box-bottom1 {
   height: 100%;
   width: 100%;
+}
+
+.mo-box-mid1 {
+  height: calc(66.6% - 10px);
+  width: 28%;
+}
+
+.mo-box-mid2 {
+  height: 10%;
+  width: calc(72% - 10px);
+  right: -10px;
+}
+
+.mo-box-mid3 {
+  height: calc(56.6% - 20px);
+  width: calc(72% - 10px);
+  right: -10px;
+  top: calc(10% + 10px);
+}
+
+.mo-box-mid4 {
+  height: 33.3%;
+  width: 100%;
+  bottom: 0;
+}
+
+.mo-box-mid5 {
+  height: 33.3%;
+  width: 10%;
+  bottom: 0;
+  right: -10px;
+}
+
+.mo-box-right1 {
+  width: 30%;
+  height: 15%;
+}
+
+.mo-box-right2 {
+  width: 30%;
+  height: 30%;
+  top: calc(15% - 10px);
+}
+
+.mo-box-right3 {
+  height: 28%;
+  width: 100%;
+  bottom: calc(33.3% - 10px);
+}
+
+.mo-box-right4 {
+  height: 28%;
+  width: 100%;
+  bottom: calc(33.3% - 10px);
+}
+
+.mo-box-right5 {
+  height: 33.3%;
+  width: 100%;
+  bottom: 0;
+}
+.mo-box-right6 {
+  height: 33.3%;
+  width: 100%;
+  bottom: 0;
+}
+
+.mo-box-left1:hover {
+  /* background-color: red; */
+  animation: stretch-narrow 2s forwards;
+}
+
+.mo-box-left2:hover {
+  background-color: #242e66;
+  /* opacity: 0.5; */
+}
+
+.mo-box-bottom1:hover {
+  animation: stretch-narrow-right 2s forwards;
+}
+
+.mo-box-left3:hover {
+  background-color: #ce2222;
+}
+
+.mo-box-left4:hover {
+  /* background-color: #ce2222; */
+  animation: stretch-tall-half 2s forwards;
+  z-index: 2;
+}
+
+.mo-box-left5:hover {
+  background-color: #242e66;
+  animation: stretch-narrow 2s forwards;
+}
+
+.mo-box-left7:hover {
+  animation: stretch-narrow-right 2s forwards;
+}
+
+/* .mo-box-mid4:hover {
+  background-color: green;
+} */
+
+.mo-box-right2:hover {
+  animation: stretch-wide 2s forwards;
+}
+
+.mo-box-right1:hover {
+  animation: stretch-tall 2s forwards;
+  z-index: 2;
+}
+
+.mo-box-right4:hover {
+  animation: stretch-narrow-right 2s forwards;
+}
+
+.mo-box-right6:hover {
+  animation: stretch-short 2s forwards;
+}
+
+.mo-box-mid5:hover {
+  animation: stretch-wide-85 2s forwards;
+}
+
+@keyframes stretch-narrow {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes stretch-narrow-right {
+  0% {
+    width: 100%;
+    right: -10px;
+  }
+  100% {
+    width: 28%;
+    right: -10px;
+  }
+}
+
+@keyframes stretch-tall-half {
+  0% {
+    /* height: 10%; */
+  }
+  100% {
+    height: 34%;
+  }
+}
+
+@keyframes stretch-tall {
+  0% {
+    /* height: 10%; */
+  }
+  100% {
+    height: calc(40% + 10px);
+  }
+}
+
+@keyframes stretch-wide {
+  0% {
+    /* width: 10%; */
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes stretch-wide-85 {
+  0% {
+    /* width: 10%; */
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes stretch-short {
+  0% {
+    /* height: 10%; */
+  }
+  100% {
+    height: 25%;
+  }
+}
+
+.mo-box-pink {
+  background-color: pink;
+  border: 10px solid black;
+}
+
+.mo-box-white {
+  background-color: #f1f1f1;
+  border: 10px solid black;
+}
+
+.mo-box-red {
+  background-color: #ce2222;
+  border: 10px solid black;
+}
+
+.mo-box-yellow {
+  background-color: #fed721;
+  border: 10px solid black;
+}
+
+.mo-box-black {
+  background-color: #0f0f0f;
+  border: 10px solid black;
+}
+
+.mo-box-blue {
+  background-color: #242e66;
+  border: 10px solid black;
+}
+
+.mo-box-hover-pink {
+  background-color: none;
+  border: 10px solid black;
+}
+
+.mo-box-hover-pink:hover {
+  background-color: pink;
+}
+
+.mo-box-hover-white {
+  background-color: none;
+  border: 10px solid black;
+}
+
+.mo-box-hover-white:hover {
+  background-color: #f1f1f1;
 }
